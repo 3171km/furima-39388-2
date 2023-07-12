@@ -1,0 +1,29 @@
+ja:
+  activerecord:
+    attributes:
+      user:
+        nickname: "ニックネーム"
+        sur_name: "姓"
+        name: "名"
+        sur_name_katakana: "姓 (カナ)"
+        name_katakana: "名 (カナ)"
+        birth_day: "生年月日"
+      item: 
+        title: "商品名"
+        overview: "商品の説明"
+        image: "商品画像"
+        category_id: "カテゴリ"
+        status_id: "商品の状態"
+        burden_id: "配送料の負担"
+        region_id: "発送元の地域"
+        shipment_id: "発送までの日数"
+        price: "価格"
+  activemodel:   
+    attributes:
+      purchaser:
+        zip_code: "郵便番号"
+        region_id: "都道府県"
+        city: "市区町村"
+        address1: "番地"
+        telephone: "電話番号"
+        token: "カード情報"
