@@ -44,15 +44,15 @@ end
 
 private
 
-def item_params
-  params.require(:item).permit(:image, :title, :overview, :category_id, :status_id, :burden_id, :region_id, :shipment_id,:price).merge(user_id: current_user.id)
-end
+  def item_params
+    params.require(:item).permit(:image, :title, :overview, :category_id, :status_id, :burden_id, :region_id, :shipment_id,:price).merge(user_id: current_user.id)
+  end
 
-def find_item
-  @item = Item.find(params[:id])
-end
+  def find_item
+    @item = Item.find(params[:id])
+  end
 
-def check_user
-  redirect_to root_path if current_user.id != @item.user_id || @item.buyer.present?
-end
+  def check_user
+    redirect_to root_path if current_user.id != @item.user_id || @item.buyer.present?
+  end
 end
