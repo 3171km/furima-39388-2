@@ -74,6 +74,7 @@ gem 'net-http'
 gem 'payjp'
 gem 'rails-i18n'
 gem "aws-sdk-s3", require: false
+gem 'mail', '2.7.1'
 
 group :production do
   gem 'unicorn', '5.4.1'
